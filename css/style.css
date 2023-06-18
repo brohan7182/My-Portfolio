@@ -198,3 +198,21 @@ body {
   font-weight: 100;
   font-family: monospace;
 }
+.footer span{
+   color: red;
+   cursor: pointer;
+}
+.footer a{
+  color: red;
+  cursor: pointer;
+}
+
+/* Mobile queries starts here. */
+
+
+/* @media only screen and (max-width: 600px) {
+  .nav-container h1,span{
+    font-size: 40px;
+  }
+} */
+/* Mobile queries ends here. */
