@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+    <script src="typeWritter.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Animate on scroll-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> <!-- Type writer effect-->
+</head>
+<body>
+    <div id="header">
+        <nav class="nav-container">
+            <h1><span>R</span>ohan</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" onclick="appearP2()">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="inner">
+        <div class="skills-container skills-heading">
+            <h1>My <span>Skills</span></h1>
+        </div>
+        <div class="skills-container">
+            <div class="skillsbox">
+                <div class="skill-title">
+                    <div class="img" >
+                        <img src="imgs/icons8-html-60.png" alt="">
+                    </div>
+                    <h3 data-aos="fade-left" >HTML</h3>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati, rem placeat quas neque sapiente quibusdam eius corrupti tenetur deserunt?</p>
+            </div>
+            <div class="skillsbox">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="imgs/icons8-css-60.png" alt="">
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati, rem placeat quas neque sapiente quibusdam eius corrupti tenetur deserunt?</p>
+            </div>
+            <div class="skillsbox">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="imgs/icons8-javascript-60.png" alt="">
+                    </div>
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati, rem placeat quas neque sapiente quibusdam eius corrupti tenetur deserunt?</p>
+            </div>
+            <div class="skillsbox">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="imgs/icons8-data-infrastructure-60.png" alt="">
+                    </div>
+                    <h3>DSA</h3>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati, rem placeat quas neque sapiente quibusdam eius corrupti tenetur deserunt?</p>
+            </div>
+            <div class="skillsbox">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="imgs/icons8-layers-60.png" alt="">
+                    </div>
+                    <h3>Graphic Designing</h3>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati, rem placeat quas neque sapiente quibusdam eius corrupti tenetur deserunt?</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h1>CopyRight reserved. @RohanBait</h1>
+    </footer>
+    <script>
+        AOS.init();
+
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+        AOS.refresh();
+    </script>
+</body>
+</html>

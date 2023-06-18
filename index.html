@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Respoonsive Portfolio</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- applied some external online libraries for animations. starts here -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="skills.html">
+    <!-- ends here. -->
+
+    <!--  -->
+    <script src="typeWritter.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Animate on scroll-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> <!-- Type writer effect-->
+</head>
+
+<body>
+    <div id="header">
+        <nav class="nav-container">
+            <h1><span>R</span>ohan</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="skills.html" onclick="appearP2()">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="container-left">
+            <div class="container-title">
+                <p>Hi, I'm <span class="name">Rohan Bait</span>,<br /> <span id="element"></span></p>
+            </div>
+            <div class="connect">
+                <p data-aos="fade-left" data-aos-duration="6000">Connect with me</p>
+                <div class="connect-icons">
+                    <div class="tooltip">
+                        <a href="https://www.google.com/webhp?authuser=1"><img src="imgs/icons8-github-60.png" alt=""
+                                data-aos="fade-left" data-aos-duration="4000"></a>
+                        <span class="tooltiptext">Connect?</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="imgs/icons8-linkedin-60.png" alt="" data-aos="fade-left" data-aos-duration="4000">
+                        <span class="tooltiptext">Let's connect</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="imgs/icons8-twitter-60.png" alt="" data-aos="fade-left" data-aos-duration="5000">
+                        <span class="tooltiptext">Connect?</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="imgs/icons8-insta-60.png" alt="" data-aos="fade-left" data-aos-duration="6000">
+                        <span class="tooltiptext">Follow me</span>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="home-image">
+            <img data-aos="flip-left" data-aos-offset="300" data-aos-easing="linear"
+                src="imgs/abramov-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <div class="about-me-section">
+        <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="linear">About Me</h2>
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="linear">
+
+            <p>
+                Hi, I'm <span class="name">Rohan Bait</span>. I am a <span class="profession">Front-End Developer</span>
+                with a passion for creating engaging and user-friendly web experiences. With a strong foundation in
+                HTML, CSS, and JavaScript, I enjoy turning ideas into beautiful and functional websites.
+            </p>
+            <p>
+                My journey in web development began several years ago when I discovered my fascination with the
+                intersection of design and technology. Since then, I have continuously honed my skills and stayed
+                up-to-date with the latest industry trends and best practices.
+            </p>
+            <p>
+                In addition to my technical skills, I bring creativity and attention to detail to every project. I
+                believe that effective communication and collaboration are essential for delivering successful outcomes.
+                I enjoy working in dynamic teams where I can contribute my expertise and learn from others.
+            </p>
+            <p>
+                When I'm not coding, you can find me exploring new hiking trails, experimenting with photography, or
+                immersing myself in a good book. I find inspiration in the world around me and strive to incorporate it
+                into my work.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h1>CopyRight reserved. @RohanBait</h1>
+    </footer>
+    
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-End Developer.', ' A Sports Enthusiast.', ' Also Graphic Designer.'],
+            typeSpeed: 60,
+            loop: false,
+            onComplete: function () {
+                typed.reset(); // Reset the Typed.js instance
+                typed.start(); // Start the animation again
+            }
+        });
+    </script>
+    <script>
+        AOS.init();
+
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+        AOS.refresh();
+    </script>
+
+</body>
+
+</html>
