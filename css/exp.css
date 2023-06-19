@@ -96,16 +96,35 @@ span {
     color: rebeccapurple;
 }
 
-.job-title {
+.title-conatiner {
     font-weight: bold;
     margin-bottom: 5px;
     color: brown;
 }
-
-.job-duration {
+.duration-container{
     color: #77a82d;
     margin-bottom: 10px;
     font-size: 10px;
+}
+.footer h1{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-family: monospace;
+  }
+
+  .footer .copyright span{
+  color: red;
+}
+.footer span{
+color: red;
+cursor: pointer;
+}
+.footer a{
+color: red;
+cursor: pointer;
 }
 
 
