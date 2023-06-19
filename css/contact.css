@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
 body {
   background: #080808;
   color: white;
-
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Poppins', sans-serif;
 }
 
 /* #header{
@@ -62,4 +62,115 @@ body {
 #header ul li a:hover {
   color: red;
   transition: all 0.3s ease-out;
+}
+
+/* Contact */
+.contact-container{
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  /* gap: 5rem; */
+  /* border:1px solid red; */
+  /* min-height: 800px; */
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-title h1{
+  font-size: 3.7rem;
+}
+.contact-email{
+  display: flex;
+  gap: 14px;
+  /* border: 1px solid red; */
+align-items: center;
+margin-top: 40px;
+
+}
+.contact-email a{
+  text-decoration: none;
+  color: white  ;
+}
+.contact-email a:hover {
+  text-decoration: underline;
+}
+.contact-email div {
+  padding-left: 10px;
+}
+.contact-email p{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.contact-email h1{
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+.contact-email img{
+  width: 80px;
+  /* height: 30px; */
+  object-fit: contain;
+}
+.contact-form h1{
+  font-size: 2.5rem;
+}
+.contact-form-input{
+  height: 3rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 750px;
+  background-color: rgb(215, 215, 215);
+  font-size: 20px;
+}
+.contact-form .contact-form-input input:focus{
+  outline: red;
+}
+textarea {
+  resize: none;
+  /* width: 100%; */
+  border-radius: 10px;
+  width: 750px;
+  margin-top: 15px;
+  background-color: rgb(215, 215, 215);
+  font-size: 20px;
+}
+/* .contact-button{
+  display: flex;
+  height: 30px;
+  width: 90px;
+  
+} */
+.contact-button button{
+  width: 190px;
+  white-space: nowrap;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Footer */
+.footer h1{
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-family: monospace;
+}
+.footer .copyright span{
+  color: red;
+}
+.footer span{
+color: red;
+cursor: pointer;
+}
+.footer a{
+color: red;
+cursor: pointer;
 }

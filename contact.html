@@ -5,19 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
     <title>Document</title>
+    <script src="js/googleSheet.js"></script>
 </head>
 <body>
     <div id="header">
         <nav class="nav-container">
             <h1><span>R</span>ohan</h1>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="skills.html" onclick="appearP2()">Skills</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
+    <div class="contact-container">
+        <!-- left -->
+        <div class="contact-title">
+            <h1>Let's Collaborate<br/>and build Amazing Projects.</h1>
+            <div class="contact-email">
+                <img src="imgs/icons8-gmail-60.png" alt="">
+                <div>
+                    <p>Mail me at</p>
+                    <h1><a href="">robait18@gmail.com</a></h1>
+                </div>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="contact-form">
+            <h1>Send me a message 🚀</h1>
+            <form action="" class="contact-form" id="contact-form" name="submit-to-google-sheet">
+                <input type="text" name="fullname" id="" class="contact-form-input" placeholder="Full name*">
+                <input type="email" name="email" id="" class="contact-form-input" placeholder="Email address*">
+                <input type="number" name="phone_number" id="" class="contact-form-input" placeholder="Phone number*">
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <div class="contact-button">
+                    <button >Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1>© Copyright 2023, designed & developed by <a href="https://github.com/brohan7182">Rohan Bait</a></h1>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    document.getElementById("contact-form").addEventListener("click", function(event){
+      event.preventDefault()
+    });
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGH90Fb2QhtOwsinElijSEcjbzcG7aWmM8NLPVvPA0LwOdNixqhZbtJG0wHUMIAWNMWA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
