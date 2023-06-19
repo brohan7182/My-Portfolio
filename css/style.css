@@ -210,9 +210,9 @@ body {
 /* Mobile queries starts here. */
 
 
-/* @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) { 
   .nav-container h1,span{
     font-size: 40px;
   }
-} */
+}
 /* Mobile queries ends here. */
