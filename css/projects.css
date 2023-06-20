@@ -12,21 +12,12 @@ body {
     color: white;
 
 }
-
-/* #header{
-    width: 100%;
-    height: 100vh;
-    background-image:url(./abramov-removebg-preview.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-} */
 #header h1 {
     font-size: 2rem;
 }
 
 #header span {
-    color: red;
+    color: red
 }
 
 .nav-container {
@@ -69,8 +60,46 @@ span {
     width: 200px;
     height: 300px;
     box-shadow: 5px 5px 20px rgba(150, 134, 47, 0.496);
+    margin: 10px;
 }
 .project-conatiner{
     display: flex;
     justify-content: space-around;
 }    
+.subtext-text button{
+     font-size: 0.9rem;
+     font-weight: 300;
+     margin-top: 8px;
+     margin-left: 62px;
+     margin-right: 50px;
+     border-radius: 5px;
+     cursor: pointer;
+     border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+     
+}
+.project-image{
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+hr{
+    margin-left: 9px;
+    margin-right: 10px;
+}
+.project-card h3{
+    padding-left: 2.5rem;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+}
+.project-link button:hover{
+    text-decoration: none;
+    color: rgba(68, 0, 255, 0.901);
+
+}
+#header h2{
+    padding-left: 42rem;
+    font-size: 40px;
+}
