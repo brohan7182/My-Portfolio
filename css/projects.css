@@ -85,9 +85,9 @@ span {
      
 }
 .project-image{
-    margin-top: 25px;
-    width: 112px;
-    border-radius: 125px;
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 150px;
 }
 hr{
     margin-left: 9px;
@@ -113,4 +113,27 @@ hr{
     font-size: 11px;
     font-weight: 700;
     color: bisque;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.footer h4{
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-family: monospace;
+}
+.footer .copyright span{
+  color: red;
+}
+.footer span{
+color: red;
+cursor: pointer;
+}
+.footer a{
+color: red;
+cursor: pointer;
 }
