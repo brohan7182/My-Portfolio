@@ -82,7 +82,7 @@ span {
 }
 .project-image{
     margin-top: 25px;
-    width: 250px;
+    width: 112px;
     border-radius: 125px;
 }
 hr{
@@ -103,3 +103,7 @@ hr{
     padding-left: 42rem;
     font-size: 40px;
 }
+/* .project-image src{
+    height: 10px;
+    width: fit-content;
+} */
