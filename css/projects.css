@@ -57,19 +57,23 @@ span {
     transition: all 0.3s ease-out;
 }
 .project-card{
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     box-shadow: 5px 5px 20px rgba(150, 134, 47, 0.496);
-    margin: 10px;
+    margin-: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 .project-conatiner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }    
 .subtext-text button{
      font-size: 0.9rem;
      font-weight: 300;
-     margin-top: 8px;
+     margin-top: 5px;
      margin-left: 62px;
      margin-right: 50px;
      border-radius: 5px;
@@ -90,9 +94,8 @@ hr{
     margin-right: 10px;
 }
 .project-card h3{
-    padding-left: 2.5rem;
-    margin-right: 2.5px;
-    margin-left: 2.5px;
+    margin-top: 0.1rem;
+    align-items: center;
 }
 .project-link button:hover{
     text-decoration: none;
@@ -103,7 +106,11 @@ hr{
     padding-left: 42rem;
     font-size: 40px;
 }
-/* .project-image src{
-    height: 10px;
-    width: fit-content;
+/* .button-style{
+    margin-top: 27px;
 } */
+.project-card p{
+    font-size: 11px;
+    font-weight: 700;
+    color: bisque;
+}
