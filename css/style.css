@@ -10,6 +10,7 @@
 body {
   background: #080808;
   color: white;
+  /* min-height: 100vh; */
 
 }
 
@@ -208,13 +209,3 @@ body {
   color: red;
   cursor: pointer;
 }
-
-/* Mobile queries starts here. */
-
-
- @media only screen and (max-width: 600px) { 
-  .nav-container h1,span{
-    font-size: 40px;
-  }
-}
-/* Mobile queries ends here. */

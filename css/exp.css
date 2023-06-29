@@ -12,15 +12,6 @@ body {
     color: white;
 }
 
-/* #header{
-    width: 100%;
-    height: 100vh;
-    background-image:url(./abramov-removebg-preview.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-} */
-
 #header h1 {
     font-size: 2rem;
 }
@@ -33,13 +24,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100vw;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 20px;
     height: 70px;
+    margin: 0 auto;
 }
 
 .nav-container h1,
-span {
+.nav-container span {
     letter-spacing: -2px;
 }
 
@@ -69,26 +61,30 @@ span {
 .experience {
     padding: 20px;
 }
+
 .experience h2 {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
     transition: background-color 0.3s ease;
-    padding-left: 35rem;
+    padding-left: 10%;
 }
-.experience h2 span{
+
+.experience h2 span {
     color: red;
 }
+
 .exp-container {
     background-color: #f5f5f50a;
     padding: 20px;
     margin-bottom: 20px;
     transition: opacity 0.3s ease;
-  }
-  
-  .exp-container:hover {
+}
+
+.exp-container:hover {
     opacity: 0.8;
-  } 
+}
+
 .exp-container h3 {
     font-size: 35px;
     font-weight: bold;
@@ -96,61 +92,185 @@ span {
     color: rebeccapurple;
 }
 
-.title-conatiner {
+.title-container {
     font-weight: bold;
     margin-bottom: 5px;
     color: brown;
 }
-.duration-container{
+
+.duration-container {
     color: #77a82d;
     margin-bottom: 10px;
     font-size: 10px;
 }
-.footer h1{
+
+.footer h1 {
     font-size: 1rem;
     text-align: center;
     margin-top: 20rem;
     margin-bottom: 20px;
     font-weight: 100;
     font-family: monospace;
-  }
-
-  .footer .copyright span{
-  color: red;
-}
-.footer span{
-color: red;
-cursor: pointer;
-}
-.footer a{
-color: red;
-cursor: pointer;
 }
 
+.footer .copyright span,
+.footer span,
+.footer a {
+    color: red;
+    cursor: pointer;
+}
 
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    #header h1 {
+        font-size: 1.5rem;
+    }
 
+    .experience h2 {
+        font-size: 30px;
+        padding-left: 0;
+    }
 
-
-
-/* Mobile Responsive Styles */
-/* @media (max-width: 600px) {
     .exp-container {
         padding: 10px;
     }
 
     .exp-container h3 {
-        font-size: 18px;
+        font-size: 25px;
     }
 
-    .job-title {
-        font-size: 16px;
+    .title-container {
+        margin-bottom: 3px;
     }
 
-    .job-duration {
-        font-size: 14px;
+    .duration-container {
+        font-size: 8px;
     }
 
-    .job-description li {
-        font-size: 14px;
+    .footer h1 {
+        margin-top: 10rem;
     }
-} */
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #header h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience h2 {
+        font-size: 40px;
+    }
+
+    .exp-container h3 {
+        font-size: 30px;
+    }
+
+    .title-container {
+        margin-bottom: 4px;
+    }
+
+    .duration-container {
+        font-size: 9px;
+    }
+
+    .footer h1 {
+        margin-top: 15rem;
+    }
+}
+
+/* Samsung Devices */
+@media only screen and (min-width: 360px) and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 2) {
+    #header h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience h2 {
+        font-size: 40px;
+    }
+
+    .exp-container h3 {
+        font-size: 30px;
+    }
+
+    .title-container {
+        margin-bottom: 4px;
+    }
+
+    .duration-container {
+        font-size: 9px;
+    }
+
+    .footer h1 {
+        margin-top: 17rem;
+    }
+}
+
+/* iPhone Devices */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+    #header h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience h2 {
+        font-size: 35px;
+    }
+
+    .exp-container h3 {
+        font-size: 28px;
+    }
+
+    .title-container {
+        margin-bottom: 4px;
+    }
+
+    .duration-container {
+        font-size: 9px;
+    }
+
+    .footer h1 {
+        margin-top: 16rem;
+    }
+}
+
+/* iPhones with landscape orientation */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    .experience h2 {
+        font-size: 40px;
+    }
+
+    .exp-container h3 {
+        font-size: 30px;
+    }
+
+    .title-container {
+        margin-bottom: 4px;
+    }
+
+    .duration-container {
+        font-size: 9px;
+    }
+
+    .footer h1 {
+        margin-top: 17rem;
+    }
+}
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1024px) {
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    .experience h2 {
+        padding-left: 0;
+    }
+
+    .footer h1 {
+        margin-top: 20rem;
+    }
+}
