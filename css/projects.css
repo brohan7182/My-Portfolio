@@ -1,195 +1,243 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background: #080808;
-    color: white;
+  background: #080808;
+  color: white;
 }
 
 #header h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #header span {
-    color: red;
+  color: red;
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 70px;
 }
 
 .nav-container h1,
 span {
-    letter-spacing: -2px;
+  letter-spacing: -2px;
 }
 
 #header ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
 }
 
 #header ul li {
-    margin: 0 10px;
-    color: white;
+  margin: 0 10px;
+  color: white;
 }
 
 #header ul li a {
-    color: white;
-    font-size: 1.15rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in;
+  color: white;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
 }
 
 #header ul li a:hover {
-    color: red;
-    transition: all 0.3s ease-out;
-}
-
-.project-card {
-    width: 300px;
-    height: 400px;
-    box-shadow: 5px 5px 20px rgba(150, 134, 47, 0.496);
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  color: red;
+  transition: all 0.3s ease-out;
 }
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.subtext-text button {
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.project-card {
+  flex-basis: calc(25% - 40px);
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9080801d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {
-    margin-top: 20px;
-    width: 100px;
-    border-radius: 150px;
-}
-
-hr {
-    margin-left: 9px;
-    margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  /* object-fit: cover; */
+  margin-bottom: 20px;
 }
 
 .project-card h3 {
-    margin-top: 0.1rem;
-    align-items: center;
-}
-
-.project-link button:hover {
-    text-decoration: none;
-    color: rgba(68, 0, 255, 0.901);
-}
-
-#header h2 {
-    padding-left: 2rem;
-    font-size: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .project-card p {
-    font-size: 11px;
-    font-weight: 700;
-    color: bisque;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 5px;
+  font-size: 0.9rem;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.project-link button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-link button:hover {
+  background-color: #eaeaea;
+}
+
+#header h2 {
+  padding-left: 44%;
+  font-size: 40px;
+}
+
+.project-card p {
+  font-size: 11px;
+  font-weight: 700;
+  color: bisque;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 .footer h4 {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 20px;
-    font-weight: 100;
-    font-family: monospace;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-family: monospace;
 }
 
 .footer .copyright span {
-    color: red;
+  color: red;
 }
 
 .footer span {
-    color: red;
-    cursor: pointer;
+  color: red;
+  cursor: pointer;
 }
 
 .footer a {
-    color: red;
-    cursor: pointer;
+  color: red;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
-    .project-card {
-        width: 100%;
-        height: auto;
-        margin: 0 0 20px 0;
-    }
+  .project-card {
+    flex-basis: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
 
-    .project-image {
-        width: 100%;
-    }
+  .project-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    /* object-fit: cover; */
+    margin-bottom: 20px;
+  }
 
-    .project-link button {
-        margin-top: 0;
-    }
+  .project-link button {
+    margin-top: 0;
+    background-color: #eaeaea;
+  }
 
-    .project-card h3 {
-        margin-top: 20px;
-    }
+  .project-card h3 {
+    margin-top: 20px;
+  }
 
-    .project-card p {
-        font-size: 14px;
-    }
+  .project-card p {
+    font-size: 14px;
+  }
 
-    .footer h4 {
-        margin-top: 20px;
-    }
+  .footer h4 {
+    margin-top: 20px;
+  }
+  #header h2 {
+    padding-left: 21%;
+    font-size: 40px;
+  }
+  .project-link button:hover {
+    background-color: #eaeaea;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .project-card {
-        width: calc(50% - 40px);
-        margin: 20px;
-        margin-left: 0;
-    }
+  .project-card {
+    flex-basis: calc(50% - 40px);
+    margin: 20px;
+    margin-left: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  #header h2 {
+    padding-left: 44%;
+    font-size: 40px;
+  }
+  .project-link button {
+    margin-top: 0;
+    background-color: #eaeaea;
+  }
+  .project-link button:hover {
+    background-color: #eaeaea;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .project-card {
-        width: calc(33.33% - 40px);
-        margin: 20px;
-        margin-left: 0;
-    }
+  .project-card {
+    flex-basis: calc(33.33% - 40px);
+    margin: 20px;
+    margin-left: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  #header h2 {
+    padding-left: 44%;
+    font-size: 40px;
+  }
+  .project-link button {
+    margin-top: 0;
+    background-color: #eaeaea;
+  }
+  .project-link button:hover {
+    background-color: #eaeaea;
+}
 }
