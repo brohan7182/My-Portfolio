@@ -10,14 +10,14 @@
 body {
     background: #080808;
     color: white;
-
 }
+
 #header h1 {
     font-size: 2rem;
 }
 
 #header span {
-    color: red
+    color: red;
 }
 
 .nav-container {
@@ -56,57 +56,68 @@ span {
     color: red;
     transition: all 0.3s ease-out;
 }
-.project-card{
+
+.project-card {
     width: 300px;
     height: 400px;
     box-shadow: 5px 5px 20px rgba(150, 134, 47, 0.496);
-    margin-: 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-.project-conatiner{
+
+.project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}    
-.subtext-text button{
-     font-size: 0.9rem;
-     font-weight: 300;
-     margin-top: 5px;
-     margin-left: 62px;
-     margin-right: 50px;
-     border-radius: 5px;
-     cursor: pointer;
-     border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-     
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.project-image{
+
+.subtext-text button {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.project-image {
     margin-top: 20px;
     width: 100px;
     border-radius: 150px;
 }
-hr{
+
+hr {
     margin-left: 9px;
     margin-right: 10px;
 }
-.project-card h3{
+
+.project-card h3 {
     margin-top: 0.1rem;
     align-items: center;
 }
-.project-link button:hover{
+
+.project-link button:hover {
     text-decoration: none;
     color: rgba(68, 0, 255, 0.901);
-
 }
-#header h2{
-    padding-left: 42rem;
+
+#header h2 {
+    padding-left: 2rem;
     font-size: 40px;
 }
-.project-card p{
+
+.project-card p {
     font-size: 11px;
     font-weight: 700;
     color: bisque;
@@ -115,22 +126,70 @@ hr{
     padding-left: 10px;
     padding-right: 5px;
 }
-.footer h4{
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 10rem;
-  margin-bottom: 20px;
-  font-weight: 100;
-  font-family: monospace;
+
+.footer h4 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-family: monospace;
 }
-.footer .copyright span{
-  color: red;
+
+.footer .copyright span {
+    color: red;
 }
-.footer span{
-color: red;
-cursor: pointer;
+
+.footer span {
+    color: red;
+    cursor: pointer;
 }
-.footer a{
-color: red;
-cursor: pointer;
+
+.footer a {
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .project-card {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-link button {
+        margin-top: 0;
+    }
+
+    .project-card h3 {
+        margin-top: 20px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+
+    .footer h4 {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .project-card {
+        width: calc(50% - 40px);
+        margin: 20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project-card {
+        width: calc(33.33% - 40px);
+        margin: 20px;
+        margin-left: 0;
+    }
 }
