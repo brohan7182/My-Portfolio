@@ -3,43 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Bait | Education & Experience</title>
     <link rel="stylesheet" href="css/exp.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="js/exp.js"></script>
-    <title>EXP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+
+    <!-- NAVBAR -->
     <div id="header">
         <nav class="nav-container">
             <h1><span>R</span>ohan</h1>
             <ul>
-              <input type='checkbox' id='check' />
-              <span class="menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="skills.html">Skills</a></li>
-                  <li><a href="education.html">Education</a></li>
-                  <li><a href="projects.html">project</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-              </span>
-              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
-        <section class="experience">
-          <h2>My <span>Education</span></h2>
-          <div class="exp-container">
-              <h3>Current Course</h3>
-              <p class="title-container">B.E Information Technology</p>
-              <p class="duration-container">A.P SHAH'24</p>
-            </div>
-            <div class="exp-container">
-              <h3>Past Qualification</h3>
-              <p class="title-container">Diploma In Information Technology</p>
-              <p class="duration-container">August 2018 - August 2021</p>
-            </div>
-          </section>
     </div>
-    <footer class="footer">
-      <h1>© Copyright 2023, designed & developed by <a href="https://github.com/brohan7182">Rohan Bait</a></h1>
-  </footer>
+
+    <!-- EDUCATION & EXPERIENCE SECTION -->
+    <section class="experience">
+
+        <!-- Education -->
+        <h2 data-aos="fade-up">Education</h2>
+
+        <div class="exp-container" data-aos="fade-right" data-aos-duration="1000">
+            <h3>B.E. Information Technology</h3>
+            <p class="title-container">A.P Shah Institute</p>
+            <p class="duration-container">December 2021 - June 2025</p>
+        </div>
+
+        <div class="exp-container" data-aos="fade-left" data-aos-duration="1000">
+            <h3>Diploma in Information Technology</h3>
+            <p class="title-container">Thakur Polytechnic</p>
+            <p class="duration-container">August 2018 - August 2021</p>
+        </div>
+
+        <!-- Work Experience -->
+        <h2 data-aos="fade-up" style="margin-top:50px;">Work Experience</h2>
+
+        <div class="exp-container" data-aos="fade-right" data-aos-duration="1000">
+            <h3>IT Executive</h3>
+            <p class="title-container">Rustomjee International</p>
+            <p class="duration-container">Oct 2024 - Dec 2024</p>
+            <p>Worked on desktop-related tasks, hardware management, and performance optimization of PCs. Provided end-user IT support for smooth operations.</p>
+        </div>
+
+        <div class="exp-container" data-aos="fade-left" data-aos-duration="1000">
+    <h3>Desktop Engineer → Cloud & DevOps</h3>
+    <p class="title-container">Graymatrix</p>
+    <p class="duration-container">Mar 2025 - Present</p>
+    
+    <p>Initially worked on desktop support, VPNs, and Linux administration; currently focused on Cloud & DevOps, automating and managing infrastructure for production and development environments.</p>
+    
+    <ul class="skills-list">
+        <li><strong>Cloud & Infrastructure:</strong> AWS (ECS, ECR, EC2, CloudFront, CDN setups)</li>
+        <li><strong>Automation & Configuration:</strong> Terraform, Docker, Nginx, Linux server management</li>
+        <li><strong>Deployment & CI/CD:</strong> Production & development setup, pipeline creation, service migration between accounts</li>
+        <li><strong>Achievements:</strong> Streamlined cloud deployments and automated repetitive tasks, improving reliability and performance</li>
+    </ul>
+</div>
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1200">
+        <h1>© 2025, Designed & Developed by <a href="https://github.com/brohan7182">Rohan Bait</a></h1>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
 </body>
+</html>
