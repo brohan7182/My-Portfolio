@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohan Bait | Cloud & DevOps Enthusiast</title>
-    <!-- my css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- external libraries for animations -->
+    <!-- External libraries -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="skills.html">
     <!-- JS libraries -->
     <script src="typeWritter.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -20,23 +19,21 @@
 </head>
 
 <body>
-    <div id="header">
+    <header id="header">
         <nav class="nav-container">
             <h1><span>R</span>ohan</h1>
-            <ul>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="check" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </ul>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </nav>
-    </div>
+    </header>
 
     <div class="container">
         <div class="container-left">
@@ -80,7 +77,7 @@
             <p>
                 Hi, I'm <span class="name">Rohan Bait</span>. I am a <span class="profession">Cloud & DevOps
                     Enthusiast</span> and a 2024 graduate. I started my professional journey as a Desktop Support
-                Engineer, where I gained hands-on experience in troubleshooting, IT support, and system management.
+                Engineer, gaining hands-on experience in troubleshooting, IT support, and system management.
             </p>
             <p>
                 Over time, my passion for automation, cloud computing, and scalable infrastructure led me to transition
@@ -88,7 +85,7 @@
                     Nginx, Linux, Networking, and Scripting</b> to design and deploy robust, production-grade systems.
             </p>
             <p>
-                I am focused on building automated, efficient, and maintainable cloud infrastructures. I enjoy solving
+                I focus on building automated, efficient, and maintainable cloud infrastructures. I enjoy solving
                 complex problems, optimizing workflows, and bridging the gap between development and operations
                 through CI/CD pipelines and infrastructure-as-code.
             </p>
@@ -105,9 +102,11 @@
 
     <script>
         var typed = new Typed('#element', {
-            strings: ['Cloud & DevOps Enthusiast.',
-  'AWS | Terraform | Docker | Linux.',
-  'Automating Reliable Cloud Infrastructure.'],
+            strings: [
+                'Cloud & DevOps Enthusiast.',
+                'AWS | Terraform | Docker | Linux.',
+                'Automating Reliable Cloud Infrastructure.'
+            ],
             typeSpeed: 60,
             loop: true
         });
